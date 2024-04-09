@@ -1,7 +1,8 @@
 db.sqlite3
 .env
 .vscode/*
-__pycache__/
-media/
-env/
 .idea/
+__pycache__/
+env/
+media/
+static/
