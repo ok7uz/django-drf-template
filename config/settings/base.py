@@ -3,9 +3,8 @@ from dotenv import load_dotenv
 from pathlib import Path
 
 
-load_dotenv()
-
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
@@ -96,4 +95,5 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.BrowsableAPIRenderer',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DATETIME_FORMAT': '%s',
 }
