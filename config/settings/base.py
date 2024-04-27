@@ -13,7 +13,7 @@ LOCAL_APPS = []
 
 THIRD_PARTY_APPS = [
     'rest_framework',
-    'drf_yasg',
+    'drf_spectacular',
     'corsheaders',
 ]
 
@@ -95,5 +95,14 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.BrowsableAPIRenderer',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DATETIME_FORMAT': '%s',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Your Project API',
+    'DESCRIPTION': 'Your project description',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+    # OTHER SETTINGS
 }
