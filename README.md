@@ -35,7 +35,7 @@ python manage.py runserver
 You can install and configure the main parts of the project through these steps.
 
 ## Configuration
-Modify the necessary values inside the .env file for configuration. Additional settings can be adjusted in the settings.py file.
+Modify the necessary values inside the ``.env`` file for configuration. Additional settings can be adjusted in the settings.py file.
 
 ## Issues and Suggestions
 If you have any questions, suggestions, or encounter any issues related to this project, please feel free to raise an issue on GitHub. Your feedback is highly appreciated!
